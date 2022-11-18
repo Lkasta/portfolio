@@ -103,8 +103,8 @@ body {
 }
 
 .left-side-title {
-    font-size: 18px;
-    margin-bottom: 24px;
+    font-size: 15px;
+    margin-bottom: 20px;
     letter-spacing: 0.07em;
     text-transform: uppercase;
     color: var(--placeholder-font);
@@ -137,8 +137,14 @@ body {
     padding-left: 15px;
 }
 
+.split-bar {
+    width: 100%;
+    height: 1px;
+    background-color: var(--background-2);
+    margin: 20px 0px;
+}
+
 .main {
     grid-area: mn;
     height: 85vh;
-    /* background: linear-gradient(#e66465, #9198e5); */
 }
