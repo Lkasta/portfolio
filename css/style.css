@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Colors */
+
+:root {
+    --background: #282a36;
+    --background-2: #44475a;
+    --font-color: #f8f8f2;
+    --placeholder-font: #6a6d7a;
+}
+
+/* Style */
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter';
+    background-color: var(--background);
+
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: "as hd" "as mn" "ft ft";
+}
+
+/* teste */
+
+.header {
+    display: flex;
+    grid-area: hd;
+    padding: 20px 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchBox {
+    width: 100%;
+    display: flex;
+    max-width: 500px;
+    padding: 10px 20px;
+    border-radius: 60px;
+    align-items: center;
+    background-color: var(--background-2);
+}
+
+.searchBox input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    color: var(--font-color);
+}
+
+.searchBox input::placeholder {
+    color: var(--placeholder-font);
+}
+
+.searchBox button {
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #282a36;
+}
+
+.aside {
+    grid-area:  as;
+    padding: 20px 30px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: center;
+}
+
+.left-side {
+    padding: 15px;
+}
+
+.item-menu-left-side {
+    margin: 10px 0px;
+    background-color: aquamarine;
+}
+
+.item-menu-left-side > a {
+    display: flex;
+}
+
+.item-menu-left-side > a > img {
+    opacity: 70%;
+    padding: 10px;
+    border-radius: 10%;
+    background-color: var(--background-2);
+}
+
+.item-menu-left-side > a > p {
+    
+}
+
+.main {
+    background-color: rebeccapurple;
+    grid-area: mn;
+    height: 80vh;
+}
+
+.footer {
+    background-color: goldenrod;
+    grid-area: ft;
+    height: 10vh;
+}
