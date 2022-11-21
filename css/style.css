@@ -17,6 +17,22 @@
     --placeholder-font: #6a6d7a;
 }
 
+
+/* Scroll Bar */
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--background-2);
+}
+
 /* Style */
 
 body {
@@ -27,7 +43,7 @@ body {
 
     display: grid;
     box-sizing: border-box;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-areas: "as hd" "as mn" "ft ft";
 }
 
@@ -51,7 +67,7 @@ body {
     background-color: var(--background-2);
 }
 
-.searchBox input{
+.searchBox input {
     flex: 1;
     border: 0;
     outline: none;
@@ -118,20 +134,20 @@ body {
     margin: 15px 0px;
 }
 
-.item-menu-left-side > a {
+.item-menu-left-side>a {
     display: flex;
     align-items: center;
     text-decoration: none;
 }
 
-.item-menu-left-side > a > img {
+.item-menu-left-side>a>img {
     opacity: 70%;
     padding: 10px;
     border-radius: 15%;
     background-color: var(--background-2);
 }
 
-.item-menu-left-side > a > p {
+.item-menu-left-side>a>p {
     color: #fff;
     font-weight: 600;
     padding-left: 15px;
@@ -147,4 +163,5 @@ body {
 .main {
     grid-area: mn;
     height: 85vh;
+    background-color: rebeccapurple;
 }

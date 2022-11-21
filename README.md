@@ -6,7 +6,7 @@ link inspiação https://codepen.io/TurkAysenur/pen/LYRKpWe
 
 posicionamento elementos html https://www.youtube.com/watch?v=HN1UjzRSdBk&t=379s
 
-temas para o site https://www.youtube.com/watch?v=XyTYr07OM7c
+tema claro e escuro para o site https://www.youtube.com/watch?v=XyTYr07OM7c
 
 icones free https://iconscout.com/
 
