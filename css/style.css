@@ -29,7 +29,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: var(--background-2);
 }
 
@@ -43,7 +43,7 @@ body {
 
     display: grid;
     box-sizing: border-box;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-areas: "as hd" "as mn" "ft ft";
 }
 
@@ -89,7 +89,6 @@ body {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    /* background-color: #282a36; */
     background: transparent;
 }
 
@@ -113,9 +112,6 @@ body {
     display: flex;
     height: 10vh;
     align-items: center;
-    padding-left: 15px;
-    padding-bottom: 10px;
-    /* justify-content: center; */
 }
 
 .left-side-title {
@@ -124,10 +120,6 @@ body {
     letter-spacing: 0.07em;
     text-transform: uppercase;
     color: var(--placeholder-font);
-}
-
-.left-side {
-    padding: 15px;
 }
 
 .item-menu-left-side {
@@ -163,5 +155,12 @@ body {
 .main {
     grid-area: mn;
     height: 85vh;
-    background-color: rebeccapurple;
+    background-color: rebeccapurple;    
+    padding: 20px 30px;
+}
+
+.explorer-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--font-color);
 }
