@@ -13,6 +13,7 @@
 :root {
     --background: #282a36;
     --background-2: #44475a;
+    --purple: #bd93f9;
     --font-color: #f8f8f2;
     --placeholder-font: #6a6d7a;
 }
@@ -162,5 +163,17 @@ body {
 .explorer-title {
     font-size: 30px;
     font-weight: 600;
+    color: var(--font-color);
+}
+
+.explorer-card {
+    background: var(--purple) url(https://www.freecodecamp.org/portuguese/news/content/images/2022/01/banner-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25%;
+    height: 25vh;    
+    border-radius: 15px;
+    padding: 25px;
     color: var(--font-color);
 }
