@@ -102,35 +102,13 @@
   <div class="main">
 
     <div class="swiper mySwiper carrossel">
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper">  
         <div class="swiper-slide">
           <div class="card1">
-            <p>Isso</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card2">
-            <p>é um</p>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="card1">
-            <p>Teste</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card2">
-            <p>é um</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card1">
-            <p>Teste</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card2">
-            <p>é um</p>
           </div>
         </div>
         <div class="swiper-slide">
@@ -139,6 +117,8 @@
           </div>
         </div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
 
@@ -151,20 +131,28 @@
   </div>
   </div>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: "auto",
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
+   <!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper(".mySwiper", {
+       spaceBetween: 30,
+       centeredSlides: true,
+       autoplay: {
+         delay: 2500,
+         disableOnInteraction: false,
+       },
+       pagination: {
+         el: ".swiper-pagination",
+         clickable: true,
+       },
+       navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+       },
+     });
+   </script>
 
 </body>
 
