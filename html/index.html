@@ -5,8 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS LINK -->
   <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <!-- Titulo -->
   <title>Portfólio</title>
+
 </head>
 
 <body>
@@ -93,19 +101,70 @@
 
   <div class="main">
 
-    <div class="explorer-box">
-      <p class="explorer-title">Explorer</p>
-
-      <div class="explorer-card">
-        <p>Teste</p>
+    <div class="swiper mySwiper carrossel">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card1">
+            <p>Isso</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card2">
+            <p>é um</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card1">
+            <p>Teste</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card2">
+            <p>é um</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card1">
+            <p>Teste</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card2">
+            <p>é um</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card1">
+            <p>Teste</p>
+          </div>
+        </div>
       </div>
-
+      <div class="swiper-pagination"></div>
     </div>
 
-    <div class="container">
+    <p class="explorer-title">Explorer</p>
 
-    </div>
   </div>
+
+  <div class="container">
+
+  </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 
 </body>
 
