@@ -125,8 +125,9 @@ body {
     color: var(--placeholder-font);
 }
 
-.item-menu-left-side {
-    margin: 15px 0px;
+.item-menu-left-side:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(2px 9px 9px rgba(0,0,0,.5))
 }
 
 .item-menu-left-side>a {
@@ -146,6 +147,31 @@ body {
     color: #fff;
     font-weight: 600;
     padding-left: 15px;
+}
+
+.item-menu-left-side {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+    margin: 10px 0px;
+}
+
+.title-link.active {
+    color: #35C3F3;
+}
+
+.img-link.active {
+    background-color:  #35C3F3;
+    opacity: 100%;
 }
 
 .split-bar {
